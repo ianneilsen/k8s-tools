@@ -1,0 +1,12 @@
+# Scripts/tooling for working in the terminal with kubernetes
+
+## Find and del terimated pods
+
+namespace="enter_the_name"
+
+delpods=$(kubectl get pods -n ${namespace} | grep -i 'Terminated' | awk '{print $1 }')
+
+for i in ${delpods[@]}; do
+  kubectl delete pod $i --force=true --wait=false --grace-period=0  -n ${namespace}
+done
+
