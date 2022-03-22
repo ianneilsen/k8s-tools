@@ -21,12 +21,12 @@ Security Tooling
 Bash/zsh Scripts
 -------------
 
-kustomize
-----------
+# kustomize
+===========
 
 ref link:https://www.openanalytics.eu/blog/2021/02/23/kustomize-best-practices/
 
-## kustomize secrets
+### kustomize secrets
 * gpg: user multi file
 * SOPS: https://github.com/mozilla/sops
 * vault hashicorp: https://github.com/benmorehouse/kustomize-vault
