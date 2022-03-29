@@ -10,3 +10,82 @@ for i in ${delpods[@]}; do
   kubectl delete pod $i --force=true --wait=false --grace-period=0  -n ${namespace}
 done
 
+
+### bash/zshrc alias'
+
+```
+### k8s shortcuts
+alias k='kubectl '
+alias kclusterget='kubectl get svc'
+
+# System k8s
+#--------------------
+alias kevents='kubectl get events --all-namespaces --sort-by=.metadata.creationTimestamp'
+#alias kgetdep-pipeline='kubectl -n pipeline get deployments'
+
+# Get all k8s
+#-----------------------
+alias kall='kubectl get all --all-namespaces'
+alias klist='kubectl get namespace,replicaset,secret,nodes,job,daemonset,statefulset,ingress,configmap,pv,pvc,service,deployment,pod --all-namespaces'
+alias klistwide='kubectl get namespace,replicaset,secret,nodes,job,daemonset,statefulset,ingress,configmap,pv,pvc,service,deployment,pod --all-namespaces -o wide'
+alias kpods='kubectl get pods --all-namespaces -o wide'
+alias knodes='kubectl get nodes -o wide'
+alias knodeswide='kubectl get nodes,pod --all-namespaces -o wide'
+alias kingress='kubectl get ingress --all-namespaces'
+#alias kcontainers="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' |sort"
+#alias kcontainers='kubectl get pods --all-namespaces -o jsonpath="{..image}" | tr -s '[[:space:]]' '\n' | sort | uniq -c'
+
+#Specific alias shortcuts for checks k8s
+alias kdnsconfig='kubectl -n kube-system get configmap coredns'
+
+# Check resources k8s
+#-----------------------
+alias knode-resources='kubectl describe nodes |grep -A 8 "Allocated resources"'
+alias kpod-resources='kubectl describe nodes |grep -A 11 "Non-terminated"'
+alias knode-conditions='kubectl describe nodes |grep -A 9 "Conditions"'
+#alias kcontainers="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' |sort"
+
+alias kcontrollermgercheck='kubectl get po -n kube-system | grep controller-manager'
+alias kschedulercheck='kubectl get po -n kube-system | grep scheduler'
+alias kconditions='kubectl describe nodes |grep -A 9 "Conditions"'
+alias kutil='kubectl get nodes --no-headers | awk '\''{print $1}'\'' | xargs -I {} sh -c '\''echo {} ; kubectl describe node {} | grep Allocated -A 5 | grep -ve Event -ve Allocated -ve percent -ve -- ; echo '\'''
+
+# Check autoscaler k8s
+#-------------------------
+alias kautoscalerlogs='kubectl -n kube-system logs -f deployment.apps/cluster-autoscaler'
+alias khpa='kubectl get hpa --all-namespaces'
+
+# Check objects k8s
+#------------------
+alias kingress='kubectl get ingress --all-namespaces'
+alias kservices='kubectl get services --all-namespaces'
+alias kendpoints='kubectl get endpoints --all-namespaces'
+alias knamespaces='kubectl get namespaces'
+alias kdeployments='kubectl get deployments --all-namespaces'
+
+# Check cpu/mem allocation k8s
+#------------------------------
+alias kcpualloc='kutil | grep % | awk '\''{print $1}'\'' | awk '\''{ sum += $1 } END { if (NR > 0) { print sum/(NR*20), "%\n" } }'\'''
+alias kmemalloc='kutil | grep % | awk '\''{print $5}'\'' | awk '\''{ sum += $1 } END { if (NR > 0) { print sum/(NR*75), "%\n" } }'\'''
+
+# kub top - add namespace/s #
+#----------------------------------
+alias ktoppod='kubectl top pod -n $NAMESPACE'
+
+# Check logs k8s #
+#--------------------
+alias klogs-container='kubectl logs --follow -n console -c $CONTAINERNAME-console --selector "app=$APP" --max-log-requests=5'
+alias klogs-nginx='kubectl logs --follow -n ingress-nginx --selector "app.kubernetes.io/name=ingress-nginx" --max-log-requests=4'
+alias klogs-scheduler='kubectl logs --follow -n kube-system kube-scheduler*'
+alias klogs-kubesystem='kubectl logs -n kube-system '
+
+alias kdumplogsdeploy='kubectl logs deploy/$DEPLOYMENTNAME'    # dump Pod logs for a Deployment (single-container case)
+alias kdumplogscontainer='kubectl logs deploy/$DEPLOYMENTNAME -c $CONTAINERNAME'     # dump Pod logs for a Deployment (multi-container case)
+
+# Port forward k8s
+#-------------------------
+#kubectl port-forward svc/my-service 5000                  # listen on local port 5000 and forward to port 5000 on Service backend
+#kubectl port-forward svc/my-service 5000:my-service-port  # listen on local port 5000 and forward to Service target port with name <my-service-port>
+#kubectl port-forward deploy/my-deployment 5000:6000       # listen on local port 5000 and forward to port 6000 on a Pod created by <my-deployment>
+
+```
