@@ -42,6 +42,10 @@ Security Tooling
 
 ** https://github.com/aquasecurity/trivy
 
+11. https://snyk.io/
+
+
+
 Bash/zsh Scripts
 -------------
 
