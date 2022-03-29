@@ -1,11 +1,11 @@
 # k8s-tools
 
-Site References
----------------
+## Reference Links
 
 
-Security Tooling
-----------------
+
+k8s Security Tooling
+=======================
 1. Open Policy Agent (OPA): cluster policies : https://github.com/open-policy-agent/opa
 
 2. KubeLinter: yaml linter : https://www.redhat.com/en/topics/containers/what-is-kubelinter
@@ -45,12 +45,8 @@ Security Tooling
 11. https://snyk.io/
 
 
-
-Bash/zsh Scripts
--------------
-
-# kustomize
-
+kustomize
+==============
 ref link:https://www.openanalytics.eu/blog/2021/02/23/kustomize-best-practices/
 
 ### kustomize secrets
@@ -62,10 +58,10 @@ ref link:https://www.openanalytics.eu/blog/2021/02/23/kustomize-best-practices/
 
 Multi-Cluster mgt
 =============
-https://admiralty.io/pricing
-https://github.com/bookingcom/shipper
-https://github.com/kubernetes-sigs/kubefed
-Rancher
-Fleet is a GitOps-at-scale project designed to facilitate and manage a multi-cluster environment.
-Google Anthos is designed to extend the Google Kubernetes engine across hybrid and multi-cluster environments.
+* https://admiralty.io/pricing
+* https://github.com/bookingcom/shipper
+* https://github.com/kubernetes-sigs/kubefed
+* Rancher
+* Fleet is a GitOps-at-scale project designed to facilitate and manage a multi-cluster environment.
+* Google Anthos is designed to extend the Google Kubernetes engine across hybrid and multi-cluster environments.
 
