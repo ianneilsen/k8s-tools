@@ -56,6 +56,12 @@ ref link:https://www.openanalytics.eu/blog/2021/02/23/kustomize-best-practices/
 * * https://learn.hashicorp.com/tutorials/vault/kubernetes-sidecar
 
 
-
-
+Multi-Cluster mgt
+=============
+https://admiralty.io/pricing
+https://github.com/bookingcom/shipper
+https://github.com/kubernetes-sigs/kubefed
+Rancher
+Fleet is a GitOps-at-scale project designed to facilitate and manage a multi-cluster environment.
+Google Anthos is designed to extend the Google Kubernetes engine across hybrid and multi-cluster environments.
 
