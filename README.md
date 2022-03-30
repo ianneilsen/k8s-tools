@@ -52,6 +52,10 @@ k8s Security Tooling
 
 14. https://github.com/Portshift/kubei
 
+15. Palo Alto twsitcli
+
+** Scan images with twistcli - Palo Alto Networkshttps://docs.paloaltonetworks.com › prisma-cloud › tools
+
 kustomize
 ==============
 ref link:https://www.openanalytics.eu/blog/2021/02/23/kustomize-best-practices/
