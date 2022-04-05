@@ -22,3 +22,6 @@ jq -r ' .imageIds[] | [ .imageDigest ] | @tsv ' | \
       --repository-name $NODEJS_ECR_REPO \
       --image-ids imageDigest=$imageDigest
   done
+
+refs:
+https://www.appmeshworkshop.com/cleanup/ecr/
