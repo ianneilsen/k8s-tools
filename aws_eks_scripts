@@ -1,6 +1,9 @@
 AWS EKS scripts
 ================
 
+NOTE: always set set -euxo pipefail in your bash script
+
+
 Delete ECR repos
  # Define variables #
 CRYSTAL_ECR_REPO=$(jq < cfn-output.json -r '.CrystalEcrRepo' | cut -d'/' -f2)
