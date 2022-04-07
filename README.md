@@ -6,9 +6,13 @@
 
 k8s Security Tooling
 =======================
-1. Open Policy Agent (OPA): cluster policies : https://github.com/open-policy-agent/opa
+1. Open Policy Agent (OPA): cluster policies : 
 
-2. KubeLinter: yaml linter : https://www.redhat.com/en/topics/containers/what-is-kubelinter
+** https://github.com/open-policy-agent/opa
+
+2. KubeLinter: yaml linter : 
+
+** https://www.redhat.com/en/topics/containers/what-is-kubelinter
 
 3. Kube-bench - configuration scanner
 
@@ -42,19 +46,31 @@ k8s Security Tooling
 
 ** https://github.com/aquasecurity/trivy
 
-11. https://snyk.io/
+11. snyk io 
 
+** https://snyk.io/
 ** https://support.snyk.io/hc/en-us/articles/360003946917-Test-images-with-the-Snyk-Container-CLI
 
-12. https://docs.anchore.com/current/
+12. anchore 
 
-13. https://www.aquasec.com/
+** https://docs.anchore.com/current/
 
-14. https://github.com/Portshift/kubei
+13. aquasec 
+
+** https://www.aquasec.com/
+
+14. kubei 
+
+** https://github.com/Portshift/kubei
 
 15. Palo Alto twsitcli
 
 ** Scan images with twistcli - Palo Alto Networkshttps://docs.paloaltonetworks.com › prisma-cloud › tools
+
+16. sysdig
+
+** https://sysdig.com/products/secure/
+
 
 kustomize
 ==============
