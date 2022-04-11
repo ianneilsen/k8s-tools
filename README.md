@@ -85,14 +85,28 @@ ref link:https://www.openanalytics.eu/blog/2021/02/23/kustomize-best-practices/
 
 Multi-Cluster mgt
 =============
+1. admiralty
 * https://admiralty.io/pricing
+2. shipper
 * https://github.com/bookingcom/shipper
+3. kubfed
 * https://github.com/kubernetes-sigs/kubefed
+4. Rancher
 * Rancher
+5. Fleet
 * Fleet is a GitOps-at-scale project designed to facilitate and manage a multi-cluster environment.
+6. Google Anthos
 * Google Anthos is designed to extend the Google Kubernetes engine across hybrid and multi-cluster environments.
+7. Das shift engine
+* https://github.com/telekom/das-schiff
 
 
 k8s linters
 ============
 https://github.com/projectatomic/dockerfile_lint
+
+k8s logs
+=============
+
+1. stern/stern formerly known as wercker/stern
+* https://github.com/stern/stern
