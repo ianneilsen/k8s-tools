@@ -8,6 +8,7 @@ https://terrytangyuan.github.io/2022/01/11/unveil-the-secret-ingredients-of-cont
 
 Deeper
 https://github.com/terrytangyuan/awesome-argo
+https://faun.pub/35-advanced-tutorials-to-learn-kubernetes-dae5695b1f18
 
 Deepest
 https://techbeacon.com/enterprise-it/47-advanced-tutorials-mastering-kubernetes
