@@ -85,6 +85,10 @@ k8s Security Tooling
 
 21. kubeaudit
 
+22.  Trivy Operator/CRD - vuln scan, audit and reporting to prom or other, argo integration
+
+** https://github.com/aquasecurity/trivy-operator
+
 
 kustomize
 ==============
