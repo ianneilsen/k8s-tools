@@ -113,6 +113,8 @@ Multi-Cluster mgt
 * Google Anthos is designed to extend the Google Kubernetes engine across hybrid and multi-cluster environments.
 7. Das shift engine
 * https://github.com/telekom/das-schiff
+8. https://rafay.co/ - governance and automation
+9. https://www.paralus.io/ - policy management - access mgt, sso, rbac, auditing, zerotrust just in time accouting
 
 
 k8s linters
