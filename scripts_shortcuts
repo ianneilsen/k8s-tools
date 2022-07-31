@@ -10,6 +10,38 @@ for i in ${delpods[@]}; do
   kubectl delete pod $i --force=true --wait=false --grace-period=0  -n ${namespace}
 done
 
+Workflow shortcuts
+    base
+        kubectl
+    System
+        -n kube-system
+    Operation
+        get
+        describe
+        rm (delete)
+        logs -f
+        exec -it
+        apply -f
+    Resource
+        po (pods)
+        dep (deployment)
+        sec (secret)
+        ing (ingress)
+        no (node)
+        svc (service)
+        ns (namespace)
+        cm (configmap)
+    Options
+        oyaml: -o yaml
+        ojson: -o json
+        owide: -o wide
+        all: --all-namespaces
+        w: --watch
+        sl: --show-labels
+        f: -f
+        l: -l
+
+ref: https://github.com/ahmetb/kubectl-aliases#syntax-explanation
 
 ### bash/zshrc alias'
 
