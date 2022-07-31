@@ -41,7 +41,9 @@ Workflow shortcuts
         f: -f
         l: -l
 
-ref: https://github.com/ahmetb/kubectl-aliases#syntax-explanation
+ref:
+* https://learnk8s.io/blog/kubectl-productivity#2-quickly-look-up-resource-specifications
+* https://github.com/ahmetb/kubectl-aliases#syntax-explanation
 
 ### bash/zshrc alias'
 
