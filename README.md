@@ -119,6 +119,7 @@ Multi-Cluster mgt
 * https://github.com/telekom/das-schiff
 8. https://rafay.co/ - governance and automation
 9. https://www.paralus.io/ - policy management - access mgt, sso, rbac, auditing, zerotrust just in time accouting
+10. https://blog.kubernauts.io/deploy-k8s-using-k8s-with-cluster-api-and-capa-on-aws-107669808367
 
 
 k8s linters
