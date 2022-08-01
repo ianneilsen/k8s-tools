@@ -17,3 +17,6 @@ Older tool.
 * kubeval
 https://github.com/instrumenta/kubeval
 Validate k8s configs
+
+* https://github.com/sturrent/k8s-check-deprecated-apis
+Works but needs work, shell based test script using pluto binary by Fairwinds
