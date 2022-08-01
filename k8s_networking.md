@@ -9,3 +9,5 @@ https://hub.docker.com/r/nicolaka/netshoot
 * https://sysdig.com/blog/understanding-how-kubernetes-services-dns-work/
 * Checking and debugging
   * https://rancher.com/docs/rancher/v2.5/en/troubleshooting/dns/#check-coredns-logging
+* debugging dns resolution
+  * https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
