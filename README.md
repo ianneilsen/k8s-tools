@@ -77,11 +77,15 @@ k8s Security Tooling
 
 ** https://github.com/controlplaneio/kubesec/releases
 
-18. kubehunter
+18. kubehunter - aquasec
+
+** https://github.com/aquasecurity/kube-hunter
 
 19. kdave
 
-20. kube-bench
+20. kube-bench - aquasec
+
+** https://github.com/aquasecurity/kube-bench
 
 21. kubeaudit
 
