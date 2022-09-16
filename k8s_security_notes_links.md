@@ -9,4 +9,8 @@ https://www.linode.com/docs/guides/linux-defense-evasion-hiding-linux-processes/
 
 
 https://madhuakula.com/talk/a-practical-approach-to-breaking-pwning-kubernetes-clusters/
+
 https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes/pentesting-kubernetes-from-the-outside
+
+
+https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
