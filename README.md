@@ -39,6 +39,8 @@ k8s Security Tooling
 8. Checkov - scan IaC
 
 ** https://www.checkov.io/
+** https://docs.bridgecrew.io/docs/kubernetes-policy-index
+** https://www.checkov.io/7.Scan%20Examples/Argo%20Workflows.html
 
 9. Sandfly security - node security
 
