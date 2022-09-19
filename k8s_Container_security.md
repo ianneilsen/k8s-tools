@@ -14,3 +14,6 @@ Good read
 https://cloudsecurityalliance.org/blog/2021/05/05/application-container-security-risks-and-countermeasures/
 https://www.securitycompassadvisory.com/blog/confronting-common-container-security-vulnerabilities/
 https://www.redhat.com/en/blog/four-container-and-kubernetes-security-risks-you-should-mitigate
+
+
+https://sysdig.com/learn-cloud-native/container-security/what-is-container-security/
