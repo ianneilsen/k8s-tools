@@ -14,3 +14,5 @@ https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes/pentesting-kube
 
 
 https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
+
+https://github.com/6mile/DevSecOps-Playbook
