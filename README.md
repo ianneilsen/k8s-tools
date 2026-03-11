@@ -1,5 +1,7 @@
 # k8s-tools
 
+Devop readmes for ole boys failing memory - looking after the admins since 1999
+
 ## Reference Links
 
 * awesome-docker tool list on github
