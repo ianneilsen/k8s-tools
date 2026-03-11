@@ -1,8 +1,11 @@
-AWS EKS scripts
-================
+#!/usr/bin/env bash
+# aws_ecr_cleanup.sh
+# WARNING: This script DELETES ecr images on aws if you have uploaded your own built images!
 
-NOTE: always set set -euxo pipefail in your bash script
 
+# WARNING WARNING: Use only if you really want a complete fresh start.
+
+set -euo pipefail
 
 Delete ECR repos
  # Define variables #
@@ -26,5 +29,5 @@ jq -r ' .imageIds[] | [ .imageDigest ] | @tsv ' | \
       --image-ids imageDigest=$imageDigest
   done
 
-refs:
-https://www.appmeshworkshop.com/cleanup/ecr/
+# refs:
+# https://www.appmeshworkshop.com/cleanup/ecr/
